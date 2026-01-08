@@ -1,5 +1,5 @@
 function verificarSenha() {
-  const senhaCorreta = "safofas";
+  const senhaCorreta = "safofa";
   const senhaDigitada = document.getElementById("senha").value.toLowerCase();
 
   if (senhaDigitada === senhaCorreta) {
@@ -12,3 +12,4 @@ function verificarSenha() {
       "⚠️ Esta edição não é destinada a trouxas.";
   }
 }
+
