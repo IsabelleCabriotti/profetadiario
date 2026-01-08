@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: url("https://i.imgur.com/3ZQ3Z8R.png");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #2b1b0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(245, 222, 179, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.manchete {
+  font-style: italic;
+  margin: 20px 0;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  font-size: 1em;
+  background: #5a3e1b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3f2b12;
+}
+
+#erro {
+  margin-top: 15px;
+  color: darkred;
+}
+
+.hidden {
+  display: none;
+}
+
+.imagem-carta {
+  max-width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.7);
+  animation: aparecer 2s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ====== AJUSTES PARA CELULAR ====== */
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px;
+    background-attachment: scroll;
+  }
+
+  .container {
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .manchete {
+    font-size: 1em;
+  }
+
+  input, button {
+    font-size: 1em;
+    padding: 14px;
+  }
+
+  .imagem-carta {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px;
+  }
+}
+
+/* ====== AJUSTES PARA CELULAR ====== */
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px;
+    background-attachment: scroll;
+  }
+
+  .container {
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .manchete {
+    font-size: 1em;
+  }
+
+  input, button {
+    font-size: 1em;
+    padding: 14px;
+  }
+
+  .imagem-carta {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px;
+  }
+}
+
+/* ====== AJUSTES PARA TELAS MUITO PEQUENAS ====== */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+/* ===== PERGAMINHO ===== */
+.pergaminho {
+  background: #e8d8a8;
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.4),
+              0 10px 30px rgba(0,0,0,0.6);
+  overflow: hidden;
+  max-height: 0;
+  animation: abrirPergaminho 2.5s ease forwards;
+}
+
+.pergaminho-conteudo {
+  padding: 20px;
+  opacity: 0;
+  animation: revelarConteudo 1.5s ease forwards;
+  animation-delay: 2s;
+}
+
+/* animações */
+@keyframes abrirPergaminho {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 2000px;
+  }
+}
+
+@keyframes revelarConteudo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

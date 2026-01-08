@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profeta Diário – Edição Especial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- JORNAL -->
+  <div class="container" id="jornal">
+    <h1>📰 Profeta Diário</h1>
+    <h2>Edição Especial</h2>
+
+    <p class="manchete">
+      Uma mensagem encantada será revelada apenas aos destinatários corretos.
+    </p>
+
+    <p>Digite a palavra-chave para acessar a matéria completa:</p>
+
+    <input type="password" id="senha" placeholder="Palavra-chave">
+    <button onclick="verificarSenha()">Ler Matéria</button>
+
+    <p id="erro"></p>
+  </div>
+
+  <!-- CARTA -->
+    <div class="container hidden" id="carta">
+        <h1>✨ Edição Revelada</h1>
+        <p class="manchete">
+            O Profeta Diário apresenta sua mensagem mais importante…
+        </p>
+
+        <div class="pergaminho">
+            <div class="pergaminho-conteudo">
+            <img src="carta.png" alt="Carta de Hogwarts" class="imagem-carta">
+            </div>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
