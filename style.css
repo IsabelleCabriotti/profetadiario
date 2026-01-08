@@ -1,14 +1,13 @@
 body {
   margin: 0;
   font-family: 'Georgia', serif;
-  background: url("https://i.imgur.com/3ZQ3Z8R.png");
-  background-size: cover;
-  background-attachment: fixed;
+  background: #2b1b0f; /* fundo escuro elegante */
   color: #2b1b0f;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 20px;
 }
 
 .container {
@@ -211,3 +210,4 @@ button:hover {
     opacity: 1;
   }
 }
+
